@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm")
     id("com.github.johnrengelman.shadow") version "6.1.0"
+    java
 }
 
 val spigotVer by extra("1.18-R0.1-SNAPSHOT")
@@ -28,5 +29,9 @@ tasks.apply {
                 "Implementation-Version" to project.version
             ))
         }
+    }
+    shadowJar {
+        archiveBaseName.set("${project.name}-${project.version}.jar")
+
     }
 }
