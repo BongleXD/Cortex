@@ -1,5 +1,5 @@
 # Cortex
 An Exteral Library for Bukkit/Bungee/Forge makes your coding more easier
 
-### Content
+## Content
 Working On...
